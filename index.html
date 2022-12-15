@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/mediaquery.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Cadastro</title>
+</head>
+<body onresize="mudouTamanho()">
+    
+    <header>
+        <div id="logo">
+            <a href="#"><img src="style/imagens/pngwing.com (2).png" alt="logopizza"></a>
+        </div>
+        <div id="textoInicial">
+            <h1> <a href="#"> Pizzaria Fornalha</a></h1>
+            <i class="material-symbols-outlined" id="icon" onclick="clickMenu()">
+                menu
+            </i>
+            <menu id="superior">
+                <ul>
+                    <li> <a href="#"> Sobre nós</a></li>
+                    <li> <a href="#"> Promoções</a></li>
+                    <li> <a href="#"> Cardápio - Delivery</a></li>
+                    <li><a href="#"> Cadastro </a></li>
+                </ul>
+            </menu>
+        </div>
+        <div id="carrinho"> <a href="#"><p id="qtd"> 0 </p> <img src="style/imagens/carrinho-carrinho.png" alt="carrinho"></a></div>
+        
+    </header>
+    <div id="NomePagina">
+         <p id="textopag"> Cadastre-se</p>
+           
+    </div>
+    <main >
+        <div id="nome" class="campos" >
+            <h4>Dados Pessoais</h4>
+            <input type="text" name="nome" class="resposta" placeholder="Nome Completo">
+        </div>
+        <div id="cpf" class="campos">
+            <input type="text" class="resposta" placeholder="CPF XXX.XXX.XXX-XX"> <br>
+        </div>
+        </div>
+        <div id="email" class="campos">
+            <input type="text" class="resposta" placeholder="e-mail">
+        </div> 
+        <div id="telefone" class="campos">
+            <input type="text" class="resposta" placeholder="cel: (xx) xxxxx-xxxx">
+        </div>
+        
+            <div class="campos"> <h4>Endereço</h4><input type="text" class="resposta" placeholder="Rua, Av, Praça, etc. "></div>
+            
+            <div class="campos"> <input type="text" class="resposta" placeholder="nº."></div>
+            <div class="campos"><input type="text" class="resposta" placeholder="complemento"></div>
+            <div class="campos"><input type="text" class="resposta" placeholder="Bairro"></div>
+            <div id="cidade" class="campos"> <input type="text" class="resposta" placeholder="Cidade">
+            <select name="estados" id="estados" class="">
+                    <option value="AC">AC</option>
+                    <option value="AL">AL</option>
+                    <option value="AM">AM</option>
+                    <option value="AP">AP</option>
+                    <option value="BA">BA</option>
+                    <option value="CE">CE</option>
+                    <option value="DF">DF</option>
+                    <option value="ES">ES</option>
+                    <option value="GO">GO</option>
+                    <option value="MA">MA</option>
+                    <option value="MG">MG</option>
+                    <option value="MS">MS</option>
+                    <option value="MT">MT</option>
+                    <option value="PA">PA</option>
+                    <option value="PB">PB</option>
+                    <option value="PE">PE</option>
+                    <option value="PI">PI</option>
+                    <option value="PR">PR</option>
+                    <option value="RJ">RJ</option>
+                    <option value="RN">RN</option>
+                    <option value="RO">RO</option>
+                    <option value="RR">RR</option>
+                    <option value="RS">RS</option>
+                    <option value="SC">SC</option>
+                    <option value="SE">SE</option>
+                    <option value="SP">SP</option>
+                    <option value="TO">TO</option>
+                </select>
+           </div>
+            <div class="campos"><input type="text" class="resposta" placeholder="CEP"></div>
+            
+                
+        
+
+        <div id="cadastrar" >
+             <button> Clique aqui para efetuar o cadastro</button>
+        </div>
+</main>
+    <footer>
+        <div id="endereco" class="baixo">
+            <h2> A Fornalha</h2>
+            <p> Rua Nossa Senhora da Programação, s/N, <br> CEP 00000-000, Curitiba/PR <br> Telefone: (41) 0000-0000</p>
+        </div>
+        <div id="expediente" class="baixo">
+            <h3>Horário de Expediente</h3>
+            <p>Aberto de seg a sex, das 18h às 23h. </p> 
+        </div>
+                
+    </footer>
+    
+</body>
+</html>

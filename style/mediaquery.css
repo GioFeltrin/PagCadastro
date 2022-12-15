@@ -1,0 +1,113 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Kenia&family=Righteous&family=Satisfy&display=swap'); /*font-family: 'Satisfy', cursive;*/
+
+@media screen and (min-width: 768px) {
+
+    header {
+        display: flex;
+    }
+
+    #logo {
+            text-align: left;
+    }
+
+    #carrinho {
+        display: block;
+        margin: auto;
+        margin-right: 4em;
+        margin-left: 0%;  
+        
+    }
+
+    #carrinho > a {
+        text-decoration: none;
+        color: white;
+        display: flex;
+        font-family: 'Righteous', cursive;
+        
+    }
+
+    #textoInicial {
+        text-align: center;
+        margin: auto;
+        padding-top: 2em;
+    }
+
+    h1 {
+        font-size: 4em;
+    }
+
+    i#icon {
+        display: none;
+    }
+
+    #superior{
+        display: inline-flex;
+       
+    
+    }
+
+    #superior > ul > li {
+        display: inline-block;
+        border-top: transparent;
+    }
+
+    #superior > ul > li > a {
+        font-family: 'Satisfy', cursive;
+        font-size: 3em;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+      
+    }
+    main{
+
+        background-color: rgb(203, 207, 144);
+        display: block;
+        padding: auto;
+        margin-left: 60vh;
+        margin-right: 60vh;
+        margin-top: 10vh;
+        margin-bottom: 10vh;
+        padding: 3vh;
+        font-family: Arial, Verdana, Geneva, Tahoma, sans-serif;
+        color: black;
+        border-radius: 40px;
+        text-align: justify;
+        box-shadow: 2em 2em 8em rgb(39, 35, 2);
+        text-align: center;
+    }
+    
+    .campos {
+        text-align: justify;
+        padding: 10px;
+    }
+    
+    input {
+        border: transparent;
+        width: 100%;
+        height: 2rem;
+        padding-left: 0.5rem;
+        background-color: rgb(229, 231, 197);
+        color: black;
+    
+    }
+
+    button {
+        color: rgb(234, 238, 183);
+        background-color: rgb(209, 56, 56);
+        border: solid rgb(209, 56, 56);
+        border-radius: 15px;    
+        padding: 3px;
+        margin: 3px;
+}
+
+    button:hover {
+        background-color: rgb(234, 238, 183);
+        color: rgb(209, 56, 56);
+        cursor: pointer;
+}
+    }
+    
+    
+
+   
