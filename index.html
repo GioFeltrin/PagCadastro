@@ -11,103 +11,40 @@
 </head>
 <body onresize="mudouTamanho()">
     
-    <header>
-        <div id="logo">
-            <a href="#"><img src="style/imagens/pngwing.com (2).png" alt="logopizza"></a>
-        </div>
-        <div id="textoInicial">
-            <h1> <a href="#"> Pizzaria Fornalha</a></h1>
-            <i class="material-symbols-outlined" id="icon" onclick="clickMenu()">
-                menu
-            </i>
-            <menu id="superior">
-                <ul>
-                    <li> <a href="#"> Sobre nós</a></li>
-                    <li> <a href="#"> Promoções</a></li>
-                    <li> <a href="#"> Cardápio - Delivery</a></li>
-                    <li><a href="#"> Cadastro </a></li>
-                </ul>
-            </menu>
-        </div>
-        <div id="carrinho"> <a href="#"><p id="qtd"> 0 </p> <img src="style/imagens/carrinho-carrinho.png" alt="carrinho"></a></div>
-        
-    </header>
-    <div id="NomePagina">
-         <p id="textopag"> Cadastre-se</p>
-           
-    </div>
+    
     <main >
         <div id="nome" class="campos" >
-            <h4>Dados Pessoais</h4>
-            <input type="text" name="nome" class="resposta" placeholder="Nome Completo">
+            <h4 id="txtDados">Dados Pessoais</h4>
+            <input type="text" name="nome" class="resposta" placeholder="Nome Completo" id="txtNome">
         </div>
         <div id="cpf" class="campos">
-            <input type="text" class="resposta" placeholder="CPF XXX.XXX.XXX-XX"> <br>
+            <input type="text" class="resposta" placeholder="CPF XXX.XXX.XXX-XX" id="txtCPF"> <br>
         </div>
         </div>
-        <div id="email" class="campos">
-            <input type="text" class="resposta" placeholder="e-mail">
+        <div id="email" class="campos" >
+            <input type="text" class="resposta" placeholder="e-mail" id="txtEmail">
         </div> 
         <div id="telefone" class="campos">
-            <input type="text" class="resposta" placeholder="cel: (xx) xxxxx-xxxx">
+            <input type="text" class="resposta" placeholder="cel: (xx) xxxxx-xxxx" id="txtTelefone">
         </div>
         
-            <div class="campos"> <h4>Endereço</h4><input type="text" class="resposta" placeholder="Rua, Av, Praça, etc. "></div>
+            <div class="campos"> <h4 id="txtEnd">Endereço</h4></div>
             
-            <div class="campos"> <input type="text" class="resposta" placeholder="nº."></div>
-            <div class="campos"><input type="text" class="resposta" placeholder="complemento"></div>
-            <div class="campos"><input type="text" class="resposta" placeholder="Bairro"></div>
-            <div id="cidade" class="campos"> <input type="text" class="resposta" placeholder="Cidade">
-            <select name="estados" id="estados" class="">
-                    <option value="AC">AC</option>
-                    <option value="AL">AL</option>
-                    <option value="AM">AM</option>
-                    <option value="AP">AP</option>
-                    <option value="BA">BA</option>
-                    <option value="CE">CE</option>
-                    <option value="DF">DF</option>
-                    <option value="ES">ES</option>
-                    <option value="GO">GO</option>
-                    <option value="MA">MA</option>
-                    <option value="MG">MG</option>
-                    <option value="MS">MS</option>
-                    <option value="MT">MT</option>
-                    <option value="PA">PA</option>
-                    <option value="PB">PB</option>
-                    <option value="PE">PE</option>
-                    <option value="PI">PI</option>
-                    <option value="PR">PR</option>
-                    <option value="RJ">RJ</option>
-                    <option value="RN">RN</option>
-                    <option value="RO">RO</option>
-                    <option value="RR">RR</option>
-                    <option value="RS">RS</option>
-                    <option value="SC">SC</option>
-                    <option value="SE">SE</option>
-                    <option value="SP">SP</option>
-                    <option value="TO">TO</option>
-                </select>
-           </div>
-            <div class="campos"><input type="text" class="resposta" placeholder="CEP"></div>
-            
+           <div class="campos"><input type="text" class="resposta" placeholder="CEP" id="txtCEP" onblur="buscaCep ()"></div>
                 
-        
-
+            <div class="campos"><input type="text" class="resposta" placeholder="Rua, Av, Praça, etc. " id="txtRua"></div>
+            
+            <div class="campos"> <input type="text" class="resposta" placeholder="nº." id="txtNum"></div>
+            <div class="campos"><input type="text" class="resposta" placeholder="complemento" id="txtComp"></div>
+            <div class="campos"><input type="text" class="resposta" placeholder="Bairro" id="txtBairro"></div>
+            <div  class="campos"> <input type="text" class="resposta" placeholder="Cidade" id="txtCidade"> </div>
+            <div  class="campos"> <input type="text" class="resposta" placeholder="Estado" id="txtEstado"></div>
+           
         <div id="cadastrar" >
-             <button> Clique aqui para efetuar o cadastro</button>
+             <button id="cadastro" onclick="cadastrar()"> Clique aqui para efetuar o cadastro</button>
         </div>
 </main>
-    <footer>
-        <div id="endereco" class="baixo">
-            <h2> A Fornalha</h2>
-            <p> Rua Nossa Senhora da Programação, s/N, <br> CEP 00000-000, Curitiba/PR <br> Telefone: (41) 0000-0000</p>
-        </div>
-        <div id="expediente" class="baixo">
-            <h3>Horário de Expediente</h3>
-            <p>Aberto de seg a sex, das 18h às 23h. </p> 
-        </div>
-                
-    </footer>
+<script type="text/javascript" src="JS/script.js"></script>
     
 </body>
 </html>

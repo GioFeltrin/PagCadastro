@@ -1,39 +1,34 @@
 
 
+function buscaCep() {
+let cep = document.getElementById('txtCEP').value;
+    if (cep !== "") {
+        let url = 'https://brasilapi.com.br/api/cep/v1/' + cep;
+        
+        let req = new XMLHttpRequest();
+        req.open ("GET", url);
+        req.send ();
 
-function clickMenu(){
-    if(superior.style.display == 'block') {
-        superior.style.display = 'none'
-    } else {
-        superior.style.display = 'block'
+        req.onload = function() {
+            if (req.status === 200) {
+                let endereco = JSON.parse (req.response);
+                document.getElementById ("txtRua").value = endereco.street;
+                document.getElementById ("txtBairro").value = endereco.neighborhood;
+                document.getElementById ("txtCidade").value = endereco.city;
+                document.getElementById ("txtEstado").value = endereco.state;
+            }
+            else if (req.status === 404) {
+                alert("CEP Inválido")
+            }
+            else {
+                alert ("Erro ao fazer a requisição")
+            }
+        }
     }
 }
 
-function mudouTamanho() {
-    if (window.innerWidth >= 768) {
-        superior.style.display = 'block'
-    } else {
-        superior.style.display = 'none'
-    }
-}
-
-
-let quantidade = document.querySelector ('qtd')
-let add = document.querySelector ('.addCar')
-add.addEventListener ('click', 'cart');
-
-function cart() {
-    quantidade ++
-    document.getElementById ('qtd').innerText=quantidade
-}
-
-let rmv = document.querySelector ('.remove')
-rmv.addEventListener ('click', 'remove')
-
-function remove (){
-    quantidade --
-    if (quantidade == 00) 
-        {}
-        document.getElementById ('qtd').innerText=quantidade
+window.onload = function () {
+    let txtCep = document.getElementById ('txtCEP');
+    txtCep.addEventListener ('blur' , buscaCep);
     
-    }
+}
