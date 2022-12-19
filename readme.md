@@ -1,9 +1,8 @@
 # Página de Cadastro
 
+DEPLOY: https://pagcadastro.netlify.app
 
 # Sobre o projeto
-
-DEPLOY: pagcadastro.netlify.app
 
 Trata-se de uma página de cadastro com funções de validação do preenchimento dos campos (input) e de preenchimento automático do endereço a partir do preenchimento do CEP.
 A intenção da página era a de aprofundar mais os conhecimentos de Javascript, o que de fato ocorreu, tendo em vista a necessidade de se criar mais funções.
